@@ -8,11 +8,11 @@ fn panic(_: &core::panic::PanicInfo) -> ! {
 
 #[unsafe(no_mangle)]
 pub extern "C" fn __libc_start_main() {
-    _start();
+    _main();
 }
 
 #[unsafe(export_name = "main")]
-pub extern "C" fn _start() {
+pub extern "C" fn _main() {
     let message = "Hello, world!\n";
 
     unsafe {core::arch::asm!(
