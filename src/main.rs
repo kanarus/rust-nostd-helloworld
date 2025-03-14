@@ -28,6 +28,4 @@ pub extern "C" fn _start() {
         in("rax") 60, /* exit */
         in("rdi") 0, /* status */
     }};
-
-    loop {}
 }
