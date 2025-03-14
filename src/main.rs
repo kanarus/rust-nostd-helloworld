@@ -7,12 +7,12 @@ fn panic(_: &core::panic::PanicInfo) -> ! {
 }
 
 #[unsafe(no_mangle)]
-pub extern "C" fn __libc_start_main() {
+fn __libc_start_main() {
     _main();
 }
 
 #[unsafe(export_name = "main")]
-pub extern "C" fn _main() {
+fn _main() {
     let message = "Hello, world!\n";
 
     unsafe {core::arch::asm!(
