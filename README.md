@@ -1,8 +1,4 @@
-This is a minimal sample to show how to print `Hello, world!` in latest **nostd** Rust at 03/2025.
-
-## Note
-
-Currently, built only for `x86_64-unknown-linux-gnu` target.
+This is a minimal sample to show how to print `Hello, world!` on x86_64 Linux by latest **no std** Rust at 03/2025.
 
 ## How to run
 
